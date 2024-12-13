@@ -1,0 +1,18 @@
+# Dependency directories
+/node_modules
+/vendor
+
+# Laravel-specific
+/public/storage
+/storage/*.key
+.env
+
+# IDE and editor-specific
+/.idea
+/.vscode
+
+# System files
+*.log
+*.cache
+*.backup
+*.swp
