@@ -15,6 +15,7 @@
             <div class="col-md-12">
                 <hr>
                 <h1>this is employee page</h1>
+                <h1>more on employee page</h1>
                 <!-- <form>
                     <div class="mb-3">
                         <label for="exampleInputUsername" class="form-label">User Name</label>

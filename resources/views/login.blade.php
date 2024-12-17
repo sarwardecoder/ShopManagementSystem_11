@@ -1,5 +1,16 @@
 <?php
-session_start(['cookie_lifetime' => 300,])
+session_start(['cookie_lifetime' => 300,]);
+if (isset($_POST['username']) && isset($_POST['password'])) {
+    if ('admin' == $_POST['username'] && 'rabbit' == $_POST['password']) {
+        // $_SESSION['loggedin'] = true;
+        echo "username and password are set";
+
+    } else {
+        // $_SESSION['loggedin'] = false;
+        echo "username and password are not set";
+
+    }
+}
 ?>
 
 
@@ -16,22 +27,41 @@ session_start(['cookie_lifetime' => 300,])
 
 <body>
     <div class="container">
-        <div class="main">
+        <div class="main ">
+
+
+
             <div class="col-md-12">
-                <form class="position-absolute top-50 start-50 translate-middle">
+                <form class="position-absolute top-50 start-50 translate-middle" action="{{'login'}}">
                     <div class="mb-3">
-                        <label for="inputUsername" class="form-label">User Name</label>
-                        <input type="username" class="form-control" id="inputUsername" aria-describedby="usernameHelp">
+                        <label for="username" class="form-label">User Name</label>
+                        <input type="text" class="form-control" name="username" id="username"
+                            aria-describedby="usernameHelp">
                         <div id="usernameHelp" class="form-text">Enter Your User Name</div>
                     </div>
                     <div class="mb-3">
-                        <label for="inputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="inputPassword1">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" id="password">
                     </div>
 
                     <button type="submit" class="btn btn-warning">login</button>
-                </form>
+                    <?php
+//if the session is true
+// if (true == $_SESSION['loggedin']) {
+//     echo 'Hallo admin, Du bist Gros';
+// } else {
+//     echo 'Hallo Stranger!! Please login below!';
+// }
+// ?>
 
+                </form>
+                <!-- <?php
+// if the session is false
+// if (false == $_SESSION['loggedin']) {
+
+// }
+
+?> -->
             </div>
 
         </div>
