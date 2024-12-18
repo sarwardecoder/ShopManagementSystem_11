@@ -14,3 +14,6 @@ Route::get('/employee', function () {
 Route::get('/product', function () {
     return view('product');
 });
+Route::get('/sales', function () {
+    return view('sales');
+});
