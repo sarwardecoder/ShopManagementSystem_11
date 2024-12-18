@@ -58,13 +58,15 @@
     </header>
 
 
-
+    <div>
+        @yield 'content';
+    </div>
 
 
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="text-center text-info pt-5">Welcome to your Dashboard</h1>
+                <h1 class="text-center text-info pt-5">Welcome to Master board</h1>
             </div>
         </div>
     </div>
