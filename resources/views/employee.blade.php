@@ -1,44 +1,216 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Employee Management </title>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+
+
+    <!-- link up -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
 
 </head>
 
 <body>
-    <div class="container">
-        <div class="main">
-            <div class="col-md-12">
-                <hr>
-                <h1>this is employee page</h1>
-                <h1>more on employee page</h1>
-                <!-- <form>
-                    <div class="mb-3">
-                        <label for="exampleInputUsername" class="form-label">User Name</label>
-                        <input type="username" class="form-control" id="exampleInputUsername"
-                            aria-describedby="usernameHelp">
-                        <div id="usernameHelp" class="form-text">Enter Your User Name</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
 
-                    <button type="submit" class="btn btn-warning">Submit</button>
-                </form> -->
-                <hr>
-
+    <!-- navigation part start -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="" alt="">HRMS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="employee.html">Employee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sales.html">Sales</a>
+                        </li>
+                    </ul>
+                    <button class="login">Login</button>
+                </div>
             </div>
+        </nav>
+    </header>
 
+
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-md-12">
+
+                <h3 class="text-success fw-bold text-center py-5">EMPLOYEE</h3>
+
+                <table class="table table-light table-responsive table-hover">
+                    <tr class="">
+                        <th>id</th>
+                        <th>name</th>
+                        <th>role</th>
+                        <th>email</th>
+                        <th>phone</th>
+                        <th>salary</th>
+                        <th>date_of_hire</th>
+                        <th>password</th>
+                        <th>create_at</th>
+                        <th>updated_at</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+
+
+    <!-- navigation part end -->
+
+
+
+
+    <!-- sec seven part end -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
