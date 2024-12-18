@@ -39,36 +39,29 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href={{'dashboard'}}>Dashboard</a>
+                            <a class="nav-link" href={{'/'}}>Dashboard</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href={{'employee'}}>Employee</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href={{'products'}}>Products</a>
+                            <a class="nav-link" href={{'product'}}>Products</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href={{'sales'}}>Sales</a>
                         </li>
+
                     </ul>
-                    <button class="login">Login</button>
+                    <button class="login" href={{'login'}}>Login</button>
                 </div>
             </div>
         </nav>
     </header>
 
 
+
     <div>
-        @yield 'content';
-    </div>
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center text-info pt-5">Welcome to Master board</h1>
-            </div>
-        </div>
+        @yield ('content')
     </div>
 
 
