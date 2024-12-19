@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> The Dashboard </title>
+    <title> Employee Management </title>
 
     <!-- font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,10 +16,10 @@
 
 
     <!-- link up -->
-    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/all.css')}}">
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 
 </head>
@@ -39,35 +39,32 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href={{'/'}}>Dashboard</a>
+                            <a class="nav-link" href="/index">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href={{'employee'}}>Employee</a>
+                            <a class="nav-link" href="employee">Employee</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href={{'product'}}>Products</a>
+                            <a class="nav-link" href="product">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href={{'sales'}}>Sales</a>
+                            <a class="nav-link" href="sales">Sales</a>
                         </li>
-
                     </ul>
-                    <button class="login" href={{'login'}}>Login</button>
+                    <button class="login"> <a class="nav-link" href="login">Login</a></button>
                 </div>
             </div>
         </nav>
     </header>
 
+    <body>
+
+        @yield('content')
 
 
-    <div>
-        @yield ('content')
-    </div>
-
-
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/custom.js"></script>
-</body>
+        <!-- sec seven part end -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
 
 </html>

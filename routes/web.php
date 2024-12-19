@@ -1,11 +1,10 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 
 Route::get('/login', function () {
     return view('login');
 });
-Route::get('/', function () {
+Route::get('/index', function () {
     return view('index');
 });
 Route::get('/employee', function () {
@@ -17,3 +16,5 @@ Route::get('/product', function () {
 Route::get('/sales', function () {
     return view('sales');
 });
+
+?>
