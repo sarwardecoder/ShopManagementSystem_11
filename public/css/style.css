@@ -40,6 +40,17 @@ body {
 
 }
 
+footer{
+    display: flex;
+    background: #25b677!important;
+    color: #f4f4f1;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    height: 50px;
+
+}
+
 .navbar-nav .nav-item a {
     font-family: "Roboto", sans-serif; 
     font-size: 20px;

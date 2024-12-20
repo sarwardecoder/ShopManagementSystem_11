@@ -61,6 +61,10 @@
 
         @yield('content')
 
+        <footer>
+            Created in year 2024. And made by love from Sarwar Jahan.
+        </footer>
+
 
         <!-- sec seven part end -->
         <script src="js/bootstrap.bundle.min.js"></script>
