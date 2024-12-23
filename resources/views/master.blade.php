@@ -62,7 +62,7 @@
         @yield('content')
 
         <footer>
-            Created in year 2024. And made by love from Sarwar Jahan.
+            Created in 2024. And made by love from Sarwar Jahan.
         </footer>
 
 
